@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.uitagenda.nl)",
+      "WebFetch(domain:www.iamsterdam.com)",
+      "WebFetch(domain:www.paradiso.nl)",
+      "WebFetch(domain:www.concertgebouw.nl)",
+      "WebFetch(domain:occii.org)",
+      "WebFetch(domain:mezrab.nl)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(npm view:*)",
+      "Bash(gh api:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:api.npmjs.org)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebSearch",
+      "mcp__gmail__list_messages",
+      "mcp__gmail__get_message",
+      "Bash(done)",
+      "Bash(python3:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(dir:*)",
+      "Bash(ls:*)",
+      "Bash(./venv/Scripts/python.exe:*)",
+      "Bash(PYTHONIOENCODING=utf-8 ./venv/Scripts/python.exe:*)",
+      "Bash(chcp:*)",
+      "Bash(set:*)",
+      "Bash(PYTHONIOENCODING=utf-8 python:*)",
+      "Bash(pip install:*)"
+    ]
+  }
+}

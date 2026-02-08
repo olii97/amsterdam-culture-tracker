@@ -1,0 +1,343 @@
+{
+  "name": "Newsletter Event Extractor (Updated)",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "// Extract relevant content from newsletter emails for AI processing\nconst results = [];\n\nfor (const item of $input.all()) {\n    const email = item.json;\n\n    // 1. Get Text\n    let textContent = email.text || email.snippet || '';\n\n    // 2. Get Metadata\n    const senderName = email.from?.value?.[0]?.name || 'Unknown';\n    const emailDate = email.date || new Date().toISOString();\n\n    // 3. AGGRESSIVE CLEANING\n    let cleanedText = textContent;\n\n    // A. Remove Headers (Van/Verzonden)\n    cleanedText = cleanedText.replace(/^(Van|Verzonden|Aan|Onderwerp):.*$/gm, '');\n\n    // B. Remove ALL URLs\n    cleanedText = cleanedText.replace(/https?:\\/\\/\\S+/g, '');\n\n    // C. NUCLEAR OPTION: Remove ALL special brackets < > [ ] { }\n    // We replace them with spaces because they are causing the parsing error\n    cleanedText = cleanedText.replace(/[<>[\\]{}]/g, ' ');\n\n    // D. Remove underscores (lines)\n    cleanedText = cleanedText.replace(/_+/g, '');\n\n    // E. Formatting Cleanup\n    cleanedText = cleanedText\n        .replace(/\\n{3,}/g, '\\n\\n')  // Max 2 newlines\n        .replace(/[ \\t]{2,}/g, ' ')   // Max 1 space\n        .trim();\n\n    // Limit length\n    cleanedText = cleanedText.substring(0, 8000);\n\n    results.push({\n          json: {\n                  senderName,\n                  emailDate,\n                  cleanedText\n          }\n    });\n}\n\nreturn results;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "c59850ec-4594-4bde-9987-bf892b185646",
+      "name": "Code in JavaScript",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "simple": false,
+        "filters": {
+          "receivedAfter": "={{ $now.minus({days: 1}).toISO() }}"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        176,
+        -16
+      ],
+      "id": "123ef4cd-bc2d-4f60-be29-893edbda3afe",
+      "name": "Get many messages",
+      "webhookId": "f960e247-d467-4e6d-a9b1-70419913c5ed",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "YisjQ6eCFxPJW8I6",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -96,
+        16
+      ],
+      "id": "05695002-94b9-46b8-856f-c734b96165c0",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        560,
+        240
+      ],
+      "id": "d1b63161-b352-4b25-9307-59e51aba6f05",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "CaEY6X4zWCZJhOxj",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "output.events",
+        "include": "allOtherFields",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1072,
+        16
+      ],
+      "id": "1992d2b9-89ce-47b0-9fd6-1f4f72cf17a9",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.cleanedText }}",
+        "schemaType": "fromJson",
+        "jsonSchemaExample": "{\n  \"source_name\": \"De Kleine Komedie\",\n  \"source_type\": \"Venue\",\n  \"events\": [\n    {\n      \"event_title\": \"JAWAD ES SOUFI\",\n      \"event_type\": \"Cabaret\",\n      \"dates_iso\": [\"2026-01-19\", \"2026-01-20\"],\n      \"description\": \"Groot talent voor het neerzetten van typetjes.\"\n    },\n    {\n      \"event_title\": \"VLAMOUSSE\",\n      \"event_type\": \"Cabaret\",\n      \"dates_iso\": [\"2026-01-23\", \"2026-01-24\"],\n      \"description\": \"Een fantasierijke, muzikale en vlijmscherpe show voor kersverse moeders, zwangere moeders, ooit moeders, nooit moeders, oudere moeders, queer-moeders, niet biologische moeders en vaders. Én kinderlozen die hard gaan op leedvermaak.\"\n    }\n  ]\n}\n",
+        "options": {
+          "systemPromptTemplate": "You are an expert extraction algorithm.\nOnly extract relevant information from the text.\nYou are an expert at extracting structured event information from newsletter emails. Extract the following:\n\n1. Newsletter source name and type (Venue, Aggregator, Artist, or Unknown)\n2. All events mentioned with their details\n\nFor events, extract:\n- event_title: The event name/title\n- event_type: The type of event (e.g., Concert, Theater, Comedy, Festival, Cabaret, etc.)\n- dates_iso: An array of event dates in ISO format (YYYY-MM-DD). If multiple dates are listed (e.g., 'ma 19 & di 20 jan'), include each one. Return an empty array [] if no dates are specified.\n- description: A short summary (max 1 sentence) or null if not found\n\nContext:\n- Email sender: {{ $json.senderName }}\n- Email date: {{ $json.emailDate }}\n\nReturn null for any field that cannot be determined from the text. If no events are found, return an empty array [] for the events field.\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1.2,
+      "position": [
+        608,
+        16
+      ],
+      "id": "add5d78c-5881-4083-8099-d49249d4007c",
+      "name": "Information Extractor"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over all items\nfor (const item of $input.all()) {\n  \n  // 1. Get source details from the 'output' object\n  const sourceData = item.json.output;\n  \n  // 2. Get event details using bracket notation for the dotted key\n  const eventData = item.json['output.events'];\n  \n  // 3. Merge them into one single flat object\n  item.json = {\n    ...sourceData,\n    ...eventData\n  };\n}\n\nreturn $input.all();\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1280,
+        16
+      ],
+      "id": "d569f107-a139-46c2-9f17-a197f69f6569",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1NGqCZJggiif_6fQ9huqLk8tx-Kfw89YAdLUIhQkLrUU/edit?gid=0#gid=0",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1NGqCZJggiif_6fQ9huqLk8tx-Kfw89YAdLUIhQkLrUU/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "event_title"
+          ],
+          "schema": [
+            {
+              "id": "source_name",
+              "displayName": "source_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "source_type",
+              "displayName": "source_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "event_title",
+              "displayName": "event_title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "event_tyype",
+              "displayName": "event_tyype",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "dates",
+              "displayName": "dates",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "description",
+              "displayName": "description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "event_type",
+              "displayName": "event_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "dates_iso",
+              "displayName": "dates_iso",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1488,
+        16
+      ],
+      "id": "972da69b-7008-4e79-98e4-a7a3c12f0b3b",
+      "name": "Append or update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MgyjxW9N2SkDvBb5",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many messages": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Information Extractor": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "46b64791-0f8f-4119-aa23-66b35f8a59b0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "0f07f81cbad606072ab54c482df221a6c2ab1b415ba5ef00dfea18803508bab1"
+  },
+  "id": "7bAmrpnwkrKQqpzh",
+  "tags": []
+}

@@ -1,0 +1,42 @@
+# Pakhuis de Zwijger Events
+
+Source: https://dezwijger.nl/agenda
+
+Total events: 34
+
+| Event Title | Event Type | Date | Hall | Description | URL | Price |
+|---|---|---|---|---|---|---|
+| Home, Interrupted | Short Films Screening of the FiDAN Film Festival | Morgen, 19.30 | Grote Zaal PDZ | Memories, Resistance and life in Iran | [Link](https://dezwijger.nl/programma/the-fluid-concept-of-home) | gratis |
+| Jongeren en de (a)sociale media | Europa in Amsterdam | di 10 feb, 19.30 | IJzaal PDZ | Hoe zorgen we voor een fijne sociale media omgeving voor jongeren. | [Link](https://dezwijger.nl/programma/jongeren-en-de-asociale-media) | gratis |
+| Je kind is een goudmijn | Boekpresentatie & nagesprek | di 10 feb, 20.00 | Grote Zaal PDZ | Een kind is voor steeds meer partijen een verdienmodel. Maar wie betaalt de prij... | [Link](https://dezwijger.nl/programma/je-kind-is-een-goudmijn) | gratis |
+| ESConference Escape towards Impact | ESC X PdZ | wo 11 feb, 09.00 | Grote Zaal PDZ | How can Systemic Co-design contribute to lasting impact in times of transition? | [Link](https://dezwijger.nl/programma/esconference-escape-towards-impact) | gratis |
+| Kneecap | Filmvertoning | wo 11 feb, 20.00 | Studio PDZ | Kneecap, boegbeeld van een burgerrechtenbeweging. | [Link](https://dezwijger.nl/programma/kneecap) | gratis |
+| Wat hebben seks, tech en politiek met elkaar te maken? | Vrij Nederland | do 12 feb, 20.00 | Grote Zaal PDZ | Een avond over seks, macht en platformen. | [Link](https://dezwijger.nl/programma/porno-is-politiek) | gratis |
+| Het coalitieakkoord in economisch perspectief | KVS Special | do 12 feb, 20.00 | Studio PDZ | Wat doet kabinet Jetten I voor de Nederlandse economie? | [Link](https://dezwijger.nl/programma/het-coalitieakkoord-in-economisch-perspectief) | gratis |
+| Venezuela after Maduro | Shelter City presents: | ma 16 feb, 19.30 | IJzaal PDZ | Human rights, civil society and the struggle for democracy. | [Link](https://dezwijger.nl/programma/venezuela-after-maduro) | gratis |
+| Groeiende ongelijkheid met Gary Economics | VPRO Meet Up x Economie van morgen | ma 16 feb, 19.30 | Studio PDZ | Volgens ex-bankier Gary Stevenson zitten we middenin een grote economische crisi... | [Link](https://dezwijger.nl/programma/groeiende-ongelijkheid-met-gary-economics) | gratis |
+| Groene kansen voor een groeiende stad | Verkiezingsquiz en debat | ma 16 feb, 20.00 | Grote Zaal PDZ | Hoe wil de politiek zich hardmaken voor een groen en gezond Amsterdam? | [Link](https://dezwijger.nl/programma/groene-kansen-voor-een-groeiende-stad) | gratis |
+| AI als vriend, therapeut of partner | VPRO Meet Up | di 17 feb, 20.00 | Grote Zaal PDZ | Hoe verandert AI de manier waarop we communiceren en relaties aangaan? | [Link](https://dezwijger.nl/programma/ai-als-vriend-therapeut-of-partner) | gratis |
+| Love of the Game | Filmvertoning + nagesprek | di 17 feb, 20.00 | Studio PDZ | Praat mee over de ongemakkelijke confrontaties, liefde, publieke kunst en intuit... | [Link](https://dezwijger.nl/programma/love-of-the-game) | gratis |
+| Op zoek naar je Signature Sound | Wat de maker maakt | wo 18 feb, 19.30 | IJzaal PDZ | Manieren om als maker een eigen geluid te ontwikkelen | [Link](https://dezwijger.nl/programma/op-zoek-naar-je-signature-sound) | gratis |
+| De Grote Volkshuisvesting Pubquiz | Wonen voor Iedereen | wo 18 feb, 20.00 | Grote Zaal PDZ | Test en deel je kennis over volkshuisvesting tijdens deze Volkshuisvesting pubqu... | [Link](https://dezwijger.nl/programma/de-grote-volkshuisvesting-pubquiz) | gratis |
+| AI-agents | Tech for Society | do 19 feb, 20.00 | Grote Zaal PDZ | Wat blijft er over van de rol van mensen als AI steeds meer werk overneemt? | [Link](https://dezwijger.nl/programma/ai-agents) | gratis |
+| Prisiri Neti | Opo Kondreman un’ Opo! | vr 20 feb, 19.00 | Grote Zaal PDZ | Een viering van de Surinaamse creativiteit en identiteit o.a. met een filmscreen... | [Link](https://dezwijger.nl/programma/prisiri-neti) | gratis |
+| The Cost of Growth | Film screening & aftertalk | ma 23 feb, 20.00 | Grote Zaal PDZ | This film explores the root causes of the poly-crisis and explores successful st... | [Link](https://dezwijger.nl/programma/the-cost-of-growth) | Toegang vanaf € 6,00 |
+| Mijn Noord | Filmvertoning + nagesprek | ma 23 feb, 20.00 | Studio PDZ | Wie zijn de bewoners van Amsterdam-Noord? | [Link](https://dezwijger.nl/programma/mijn-noord) | gratis |
+| Queer Poetry Night | Unwanted Words Project presents: | di 24 feb, 19.00 | Expo | Celebrating spoken word, poetry, storytelling, op-eds, drama & music. | [Link](https://dezwijger.nl/programma/queer-poetry-night-17) | gratis |
+| Mohammed Zaanoun – Restoring Everyday Gaza | Fotokroniek x Talking Primates | di 24 feb, 20.00 | Grote Zaal PDZ | How do we understand a place seen only through destruction? | [Link](https://dezwijger.nl/programma/mohammed-zaanoun) | gratis |
+| De Rolverdeling | Podcast opname | ma 2 mrt, 19.30 | IJzaal PDZ | Zegt de rol in je groep 8 musical iets over je toekomst? | [Link](https://dezwijger.nl/programma/de-rolverdeling) | gratis |
+| Verkiezingsdialoog: de gemeenschapseconomie | Amsterdam kiest: Later is alles beter | ma 2 mrt, 20.00 | Grote Zaal PDZ | Hoe bouwen Amsterdamse leiders gezamenlijk aan een eerlijke, lokale en democrati... | [Link](https://dezwijger.nl/programma/verkiezingsdialoog-de-gemeenschapseconomie) | gratis |
+| Verkiezingsprogramma Dakloosheid | Amsterdam Kiest: Later is Alles Beter | di 3 mrt, 19.30 | IJzaal PDZ | Wat gaat de nieuwe gemeenteraad doen tegen de groeiende dakloosheid? | [Link](https://dezwijger.nl/programma/verkiezingsprogramma-dakloosheid) | gratis |
+| New world order for food security | Food Dialogue | di 3 mrt, 20.00 | Grote Zaal PDZ | From “feeding the world” to “securing our own supply”? | [Link](https://dezwijger.nl/programma/new-world-order-for-food-security) | gratis |
+| Toekomst van de Vondelkerk | Special | wo 4 mrt, 19.30 | IJzaal PDZ | Wat is het belang van de Vondelkerk voor de stad en hoe ziet de toekomst eruit? | [Link](https://dezwijger.nl/programma/toekomst-van-de-vondelkerk) | gratis |
+| Mevr. De Architect | De Architect x PdZ | wo 4 mrt, 20.00 | Grote Zaal PDZ | Mevr. De Architect 2.0 brengt de vrouwelijke architect in positie: voorbij repre... | [Link](https://dezwijger.nl/programma/mevr-de-architect) | gratis |
+| Het Amsterdamse Scholierendebat | Amsterdam Kiest x Stadslab | do 5 mrt, 15.00 | Grote Zaal PDZ | Het debat tussen Amsterdamse jongeren en -politici over hun toekomst. | [Link](https://dezwijger.nl/programma/jongerendebat-gemeenteraadsverkiezingen) | gratis |
+| Women After Dark | Femtopia | vr 6 mrt, 19.30 | IJzaal PDZ | In conversation with Nourhan Bassam on her latest book 'Women After Dark' | [Link](https://dezwijger.nl/programma/women-after-dark) | gratis |
+| Wie bezit onze digitale democratie? | Economie van morgen x We are stewards | ma 9 mrt, 19.30 | IJzaal PDZ | Onze strategische autonomie staat onder druk. Hoe richten we bedrijven zo in dat... | [Link](https://dezwijger.nl/programma/wie-bezit-onze-digitale-democratie) | gratis |
+| Verkiezingsdialoog: Een sterke en gezonde stad | Amsterdam kiest: Later is alles beter | di 10 mrt, 20.00 | Grote Zaal PDZ | Hoe bewaken de Amsterdamse politici de veerkracht en gezondheid van de stad en h... | [Link](https://dezwijger.nl/programma/verkiezingsdialoog-een-sterke-en-gezonde-stad) | gratis |
+| How to care for Bonaire? | Groene Transitie | do 12 mrt, 20.00 | IJzaal PDZ | How to change the Dutch climate policy framework for climate justice? | [Link](https://dezwijger.nl/programma/how-to-care-for-bonaire) | gratis |
+| Houtbouw is goud, maar kan ook fout #3 – Vocht | Houtbouw | di 17 mrt, 20.00 | Grote Zaal PDZ | Tijdens de derde editie delen we met elkaar onze kennis en ‘lessons learned’ op ... | [Link](https://dezwijger.nl/programma/houtbouw-is-goud-maar-kan-ook-fout-3-vocht) | gratis |
+| Dignity for Migrant Workers in Farm2Fork | Filmvertoning & nagesprek | ma 23 mrt, 20.00 | Grote Zaal PDZ | Hoe kunnen we de waardigheid van arbeidsmigranten en werknemers in de Farm2Fork-... | [Link](https://dezwijger.nl/programma/dignity-for-migrant-workers-in-farm2fork) | gratis |
+| Queer Poetry Night | Unwanted Words Project presents: | di 24 mrt, 19.00 | Expo | Celebrating spoken word, poetry, storytelling, op-eds, drama & music. | [Link](https://dezwijger.nl/programma/queer-poetry-night-18) | gratis |
