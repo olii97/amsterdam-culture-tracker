@@ -17,8 +17,8 @@ VENUES = [
     "de_kleine_komedie",
     "de_balie",
     "rode_hoed",
+    "paradiso",
     # "muziekgebouw",
-    # "de_kleine_komedie",
     # "carré",
 ]
 
