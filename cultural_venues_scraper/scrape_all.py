@@ -8,6 +8,8 @@ import csv
 import os
 import importlib
 
+from cultural_venues_scraper.supabase_writer import write_to_supabase
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Register venue scrapers here — each must have scrape_all_pages(), write_markdown(), write_csv()
@@ -53,6 +55,9 @@ def run_all():
         writer.writeheader()
         writer.writerows(combined)
 
+    # Write to Supabase
+    write_to_supabase(combined)
+    
     print(f"\n{'='*60}")
     print(f"Combined: {len(combined)} events from {len(VENUES)} venue(s)")
     print(f"Written to {combined_csv}")

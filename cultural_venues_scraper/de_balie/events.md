@@ -2,7 +2,7 @@
 
 Source: https://debalie.nl/programma/
 
-Total events: 38
+Total events: 41
 
 | Event Title | Event Type | Date | Hall | Description | URL | Price |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,7 @@ Total events: 38
 | Journalistiek theater: Gezocht: een paar vierkante meter!  | Politiek & Democratie | di 24 februari 2026, 20:00:00 | De Balie | In Ede | [Link](https://debalie.nl/programma/journalistiek-theater-gezocht-een-paar-vierkante-meter-3-24-02-2026/) | Gratis |
 | Nationaal Gesprek over Vrijheid: Carola Schouten | Nationaal Gesprek over Vrijheid | wo 25 februari 2026 | De Balie | Studenten van het STC Rotterdam gaan in gesprek met de burgemeester van Rotterda... | [Link](https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-carola-schouten-25-02-2026/) | Gratis |
 | Plein Publiek: Jeangu Macrooy | Idee & Verbeelding | vr 27 februari 2026, 17:30 | De Balie | Jeangu Macrooy maakte indruk in de hitmusicals Jesus Christ Superstar en Hadesto... | [Link](https://debalie.nl/programma/plein-publiek-jeangu-macrooy-2-27-02-2026/) | Gratis |
+| Acht jaar ‘kneiterlinks’ Amsterdam | Politiek & Democratie | ma 2 maart 2026, 20:00 | De Balie | De afgelopen acht jaar werd Amsterdam bestuurd door coalities van PvdA, GroenLin... | [Link](https://debalie.nl/programma/acht-jaar-kneiterlinks-amsterdam-02-03-2026/) | Gratis |
 | Caroline de Gruyter: Europeanen tussen oorlog en vrede | Geopolitiek & Mensenrechten | di 3 maart 2026, 20:00 | De Balie | Oorlog in Europa leek na de val van de muur voorgoed verleden tijd. Wat heeft ta... | [Link](https://debalie.nl/programma/caroline-de-gruyter-europeanen-tussen-oorlog-en-vrede-03-03-2026/) | Gratis |
 | Het gevaarlijke denken van Carl Schmitt | Politiek & Democratie, Idee & Verbeelding | wo 4 maart 2026, 20:00 | De Balie | Hij was de 'kroonjurist van het Derde Rijk', toch kunnen we de ideeën van politi... | [Link](https://debalie.nl/programma/het-gevaarlijke-denken-van-carl-schmitt-04-03-2026/) | Gratis |
 | Verkiezingsdebat: Amsterdam, de digitale stad | Politiek & Democratie, Leven & Tijdgeest | do 5 maart 2026, 20:00 | De Balie | In aanloop naar de gemeenteraadsverkiezingen gaan politieke partijen in gesprek ... | [Link](https://debalie.nl/programma/verkiezingsdebat-amsterdam-de-digitale-stad-05-03-2026/) | Gratis |
@@ -33,6 +34,7 @@ Total events: 38
 | David Foster Wallace en de wereld van Eindeloos vertier | Idee & Verbeelding | vr 6 maart 2026, 20:00 | De Balie | Amusement dat zo verslavend is dat het mensen verlamt en vernietigt. Dat is het ... | [Link](https://debalie.nl/programma/naar-de-wereld-van-eindeloos-vertier-06-03-2026/) | Gratis |
 | Behind the Opera: Theory of Flames | Idee & Verbeelding | zo 8 maart 2026, 16:00:00 | De Balie | Wanneer wordt een geliefde een vreemde? En is een gedeelde realiteit daarvoor ee... | [Link](https://debalie.nl/programma/behind-the-opera-theory-of-flames-08-03-2026/) | Gratis |
 | Nationaal Gesprek over Vrijheid: Marthyne Kunst | Nationaal Gesprek over Vrijheid | ma 9 maart 2026 | De Balie | Studenten van het Cibap Zwolle gaan in gesprek met de hoofdofficier van justitie... | [Link](https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-marthyne-kunst-09-03-2026/) | Gratis |
+| Verkiezingsdebat: Amsterdam, de sociale stad | Politiek & Democratie | ma 9 maart 2026, 20:00 | De Balie | Steeds meer Amsterdammers doen een beroep op de gemeente om zorg – en lopen tege... | [Link](https://debalie.nl/programma/verkiezingsdebat-amsterdam-de-sociale-stad-09-03-2026/) | Gratis |
 | De rechtsstaat onder druk – met Gijs Scholten van Aschat | Politiek & Democratie | di 10 maart 2026, 20:00 | De Balie | Een muzikale theaterperformance over het functioneren van de rechtsstaat. Met Gi... | [Link](https://debalie.nl/programma/de-rechtsstaat-onder-druk-met-gijs-scholten-van-aschat-10-03-2026/) | Gratis |
 | Muskism, capitalism according to Elon Musk | Geopolitiek & Mensenrechten | zo 15 maart 2026, 11:00 | De Balie | Elon Musk stands for more than an individual billionaire; he stands for a system... | [Link](https://debalie.nl/programma/muskism-capitalism-according-to-elon-musk-15-03-2026/) | Gratis |
 | Arnon Grunberg meets Ruth Franklin | Idee & Verbeelding | zo 15 maart 2026, 15:00 | De Balie | Who was Anne Frank as a historical person, and how does her life relate to the g... | [Link](https://debalie.nl/programma/arnon-grunberg-meets-ruth-franklin-15-03-2026/) | Gratis |
@@ -40,6 +42,7 @@ Total events: 38
 | Slotdebat: grote partijen | Politiek & Democratie | ma 16 maart 2026, 20:00:00 | De Balie | De Balie x Het Parool | [Link](https://debalie.nl/programma/slotdebat-grote-partijen-16-03-2026/) | Gratis |
 | Groenland en de nieuwe wereldorde | Geopolitiek & Mensenrechten | do 19 maart 2026, 20:00 | De Balie | Trumps bokkensprongen dwingen Europa tot bezinning: hoe ziet een Europa zonder A... | [Link](https://debalie.nl/programma/groenland-en-de-nieuwe-wereldorde-19-03-2026/) | Gratis |
 | Van crisis naar koers: over klimaatbeleid dat verder vooruit kijkt | Politiek & Democratie, Klimaat & duurzaamheid | ma 23 maart 2026, 20:00 | De Balie | Op deze avond gaan we in gesprek met experts en politici over hoe Nederland weer... | [Link](https://debalie.nl/programma/van-crisis-naar-koers-over-klimaatbeleid-dat-verder-vooruit-kijkt-23-03-2026/) | Gratis |
+| Starten, groeien, innoveren: welke investeringen heeft Nederland nodig? | Politiek & Democratie | vr 27 maart 2026, 20:00 | De Balie | ‘Het is één voor twaalf voor de Nederlandse economie’, stelt het rapport-Wennink... | [Link](https://debalie.nl/programma/starten-groeien-innoveren-welke-investeringen-heeft-nederland-nodig-27-03-2026/) | Gratis |
 | Theatergroep de Kale: Quincampoix of de Windhandelaars | Idee & Verbeelding | zo 29 maart 2026, 15:00 | De Balie | Op zondagmiddag 29 maart organiseert Theatergroep De Kale een leesvoorstelling v... | [Link](https://debalie.nl/programma/theatergroep-de-kale-quincampoix-of-de-windhandelaars-29-03-2026/) | Gratis |
 | Alkibiades: over democratie in verval | Politiek & Democratie, Idee & Verbeelding | do 2 april 2026, 20:00 | De Balie | Met o.a. Ilja Leonard Pfeijffer | [Link](https://debalie.nl/programma/alkibiades-over-democratie-in-verval-02-04-2026/) | Gratis |
 | Is publieksfilosofie echt filosofie? | Idee & Verbeelding | wo 15 april 2026, 20:00 | De Balie | Welke rol heeft filosofie in het dagelijks leven? En in het publieke debat? Of i... | [Link](https://debalie.nl/programma/is-publieksfilosofie-echt-filosofie-15-04-2026/) | Gratis |

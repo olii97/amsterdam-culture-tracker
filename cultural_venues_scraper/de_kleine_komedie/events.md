@@ -2,15 +2,14 @@
 
 Source: https://www.dekleinekomedie.nl/agenda
 
-Total events: 87
+Total events: 86
 
 | Event Title | Event Type | Date | Hall | Description | URL | Price |
 |---|---|---|---|---|---|---|
-| VOLKSKRANT COMEDYTALENTEN 2026 | Cabaret | ma 9 feb, 20.15 uur tot ca. 22.30 uur | De Kleine Komedie | Marie Koet, David van Rosmalen & Wina Ricardo - De top drie comedytalenten, een ... | [Link](https://www.dekleinekomedie.nl/agenda/volkskrant-comedytalenten-2026-lphr) | EUR 10.75 |
 | HAZES MEETS B.B. KING | MUZIKAAL, PREMIÈRE, VERHALEN VERTELLEN | di 10 feb, 20.15 uur tot ca. 21.45 uur | De Kleine Komedie | Blues, Zweet & Tranen - première | [Link](https://www.dekleinekomedie.nl/agenda/hazes-meets-b-b-king-hwy8) | EUR 12.75 |
 | PIETER JOUKE | TAALKUNSTIG, CABARET, PREMIÈRE | wo 11 feb, t/m do 12 feb | De Kleine Komedie | Uit stilstand - première - ‘Een indrukwekkend–inderdaad, ernstig–maar zeer geest... | [Link](https://www.dekleinekomedie.nl/agenda/pieter-jouke-zkhc) | EUR 11.25 |
 | NASRDIN DCHAR | PERSOONLIJK, PREMIÈRE, VERHALEN VERTELLEN | vr 13 feb, t/m za 14 feb | De Kleine Komedie | Wat als... - première | [Link](https://www.dekleinekomedie.nl/agenda/nasrdin-dchar-4vgj) | EUR 12.25 |
-| REMY EVERS, THIJS VAN DE MEEBERG & MARCO LOPES | CABARET, SKETCHES | zo 15 feb, 20.15 uur tot ca. 21.50 uur | De Kleine Komedie | Un, Dos, Stress - Een absurde polonaise van scènes. | [Link](https://www.dekleinekomedie.nl/agenda/remy-evers-thijs-van-de-meeberg-marco-lopes-9t9m) | EUR 14.00 |
+| REMY EVERS, THIJS VAN DE MEEBERG & MARCO LOPES | CABARET, SKETCHES | zo 15 feb, 20.15 uur tot ca. 21.50 uur | De Kleine Komedie | Un, Dos, Stress - Een absurde polonaise van scènes. | [Link](https://www.dekleinekomedie.nl/agenda/remy-evers-thijs-van-de-meeberg-marco-lopes-9t9m) | EUR 11.00 |
 | MICHA WERTHEIM | CABARET, PREMIÈRE | di 17 feb, t/m za 23 mei | De Kleine Komedie | Micha Wertheim voor iedereen - première | [Link](https://www.dekleinekomedie.nl/agenda/micha-wertheim-fr9b) | EUR 14.00 |
 | VOLMONDIG in Café De Kroon | Cabaret | wo 18 feb, 19.30 uur | De Kleine Komedie | Woordkunst & stand-up + diner | [Link](https://www.dekleinekomedie.nl/agenda/volmondig-in-cafe-de-kroon-51fw) | EUR 36.50 |
 | FLIP NOORMAN | MUZIKAAL, THEATERCONCERT, RAUW | zo 22 feb, 20.15 uur | De Kleine Komedie | Zingt Shane MacGowan (The Pogues) | [Link](https://www.dekleinekomedie.nl/agenda/flip-noorman-6nvk) | EUR 14.00 |
@@ -21,7 +20,7 @@ Total events: 87
 | KIEM | Cabaret | wo 1 okt, t/m wo 6 mei | De Kleine Komedie | Podium voor het theaterlied - in Klein Bellevue - Een unieke avond met Nederland... | [Link](https://www.dekleinekomedie.nl/agenda/kiem-m56f) |  |
 | LISA OSTERMANN | MET LIEDJES, CABARET, PREMIÈRE | wo 4 mrt, t/m za 9 mei | De Kleine Komedie | De baas - première - ‘Lisa Ostermann is een natuurtalent.' (Trouw) | [Link](https://www.dekleinekomedie.nl/agenda/lisa-ostermann-bfmb) | EUR 14.00 |
 | AAF BRANDT CORSTIUS & LIES VISSCHEDIJK | Cabaret | vr 6 mrt, t/m za 7 mrt | De Kleine Komedie | Over de liefde | [Link](https://www.dekleinekomedie.nl/agenda/aaf-brandt-corstius-lies-visschedijk-4v4g) | EUR 14.00 |
-| FEMILICIOUS XL | MET GASTEN, ALLEEN IN DE KLEINE KOMEDIE, FEMINISTISCH | zo 8 mrt, 20.15 uur | De Kleine Komedie | Nina de la Parra e.v.a. (seizoen 25/26) | [Link](https://www.dekleinekomedie.nl/agenda/femilicious-xl-n1ng) | EUR 14.00 |
+| FEMILICIOUS XL | MET GASTEN, ALLEEN IN DE KLEINE KOMEDIE, FEMINISTISCH | zo 8 mrt, 20.15 uur | De Kleine Komedie | Nina de la Parra en gasten | [Link](https://www.dekleinekomedie.nl/agenda/femilicious-xl-n1ng) | EUR 14.00 |
 | ABDELKADER BENALI & DARIA VAN DEN BERCKEN | LITERAIR, PREMIÈRE, VERHALEN VERTELLEN | ma 9 mrt, 20.15 uur | De Kleine Komedie | De wereld van Ali & Nino - première | [Link](https://www.dekleinekomedie.nl/agenda/abdelkader-benali-daria-van-den-bercken-t8f1) | EUR 14.00 |
 | BRO'S | CABARET, ABSURD | di 10 mrt, 20.15 uur | De Kleine Komedie | Bromens | [Link](https://www.dekleinekomedie.nl/agenda/bro-s-csq7) | EUR 14.00 |
 | HOWARD KOMPROE & NONI KOOIMAN | CABARET, PREMIÈRE, VERHALEN VERTELLEN | wo 11 mrt, t/m do 12 mrt | De Kleine Komedie | Peper & Zuur - première - Er wordt live gekookt en live gelachen. | [Link](https://www.dekleinekomedie.nl/agenda/howard-komproe-noni-kooiman-t8f7) | EUR 14.00 |

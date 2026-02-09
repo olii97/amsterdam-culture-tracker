@@ -2,7 +2,7 @@
 
 Source: https://www.podiuminfo.nl/podium/2/concerten/Paradiso/Amsterdam/
 
-Total events: 265
+Total events: 267
 
 | Event Title | Event Type | Date | Hall | Description | URL | Price |
 |---|---|---|---|---|---|---|
@@ -231,8 +231,8 @@ Total events: 265
 | The Soulful Sessions | Concert | zo 24 mei. 2026, 20:00 | Paradiso - Grote Zaal | The Soulful Sessions komt weer terug naar Paradiso op zondag 24 mei: hét event v... | [Link](https://www.podiuminfo.nl/concert/451611/The-Soulful-Sessions/Paradiso/) | EUR 25.70 |
 | Son Mieux | Concert | ma 25 mei. 2026, 20:00 | Paradiso - Grote Zaal | De zevenkoppige band Son Mieux uit Den Haag maakt de muziek die we nodig hebben ... | [Link](https://www.podiuminfo.nl/concert/433564/Son-Mieux/Paradiso/) | EUR 42.90 [UITVERKOCHT] |
 | Son Mieux | Concert | di 26 mei. 2026, 20:00 | Paradiso - Grote Zaal | Concert Son Mieux in Paradiso, Amsterdam op dinsdag 26 mei 2026 met Son Mieux | [Link](https://www.podiuminfo.nl/concert/433565/Son-Mieux/Paradiso/) | EUR 42.90 [UITVERKOCHT] |
-| Sixteen Horsepower | Concert | wo 27 mei. 2026, 20:30 | Paradiso - Grote Zaal | 16 Horsepower keert na 21 jaar terug naar Europa. 
-
+| Sixteen Horsepower | Concert | wo 27 mei. 2026, 20:30 | Paradiso - Grote Zaal | 16 Horsepower keert na 21 jaar terug naar Europa. 
+
 16 Horsepower staat bekend... | [Link](https://www.podiuminfo.nl/concert/449145/Sixteen-Horsepower/Paradiso/) | EUR 45.40 [UITVERKOCHT] |
 | POM | Concert | do 28 mei. 2026, 19:30 | Paradiso - Bovenzaal | POM combineert rauwe gitaarmuziek met een vrolijke, energieke uitstraling. De Am... | [Link](https://www.podiuminfo.nl/concert/450856/POM/Paradiso/) | EUR 16.00 |
 | Morgan Heritage | Concert | za 30 mei. 2026, 20:30 | Paradiso - Grote Zaal | Familieband geeft reggae door aan volgende generaties | [Link](https://www.podiuminfo.nl/concert/449506/Morgan-Heritage/Paradiso/) | EUR 36.30 |
@@ -255,7 +255,9 @@ Total events: 265
 | Amenra | Concert | za 18 jul. 2026, 20:30 | Paradiso - Grote Zaal | De Belgische metalband Amenra ontstond begin jaren 2000 met een veelzijdig gelui... | [Link](https://www.podiuminfo.nl/concert/451142/Amenra/Paradiso/) | EUR 34.30 |
 | Dekmantel Festival X Stoor Live: Speedy J, Clark, Barker And More. | Concert | do 30 jul. 2026, 17:00 | Paradiso - Grote Zaal en Bovenzaal | Tijdens Dekmantel Festival 2026 keren Speedy J en de STOOR crew terug naar Parad... | [Link](https://www.podiuminfo.nl/concert/450830/Dekmantel-Festival-X-Stoor-Live-Speedy-J-Clark-Barker-And-More-/Paradiso/) | TBA |
 | Voxtrot | Concert | zo 20 sep. 2026, 19:30 | Paradiso - Bovenzaal | Indierockband bekend uit het blogtijdperk maakt wederkeer | [Link](https://www.podiuminfo.nl/concert/451498/Voxtrot/Paradiso/) | EUR 17.00 |
+| Douwe Bob - Outcast Town | Concert | wo 23 sep. 2026, 20:30 | Paradiso - Grote Zaal | Afgelopen twee jaar konden we niet om hem heen. Douwe Bob was in 2024 de meest g... | [Link](https://www.podiuminfo.nl/concert/451812/Douwe-Bob-Outcast-Town/Paradiso/) | EUR 42.90 |
 | Parra For Cuva | Concert | wo 30 sep. 2026, 20:30 | Paradiso - Grote Zaal | Parra for Cuva is een Duitse producer, componist en dj, bekend om zijn elektroni... | [Link](https://www.podiuminfo.nl/concert/450831/Parra-For-Cuva/Paradiso/) | EUR 39.30 |
+| Band Of Horses | Concert | zo 4 okt. 2026, 00:00 | Paradiso - Zaal onbekend | Band of Horses bracht 20 jaar geleden hun debuutalbum ‘Everything All the Time’ ... | [Link](https://www.podiuminfo.nl/concert/451826/Band-Of-Horses/Paradiso/) | EUR 47.40 |
 | Panchiko | Concert | do 8 okt. 2026, 19:30 | Paradiso - Grote Zaal | Van alle bands met een verbluffend resultaat na hun eerste album, springt Panchi... | [Link](https://www.podiuminfo.nl/concert/447813/Panchiko/Paradiso/) | EUR 24.20 |
 | Jack Savoretti - We Will Always Be The Way We Were Tour | Concert | za 10 okt. 2026, 20:00 | Paradiso - Grote Zaal | De Engels-Italiaanse zanger Jack Savoretti heeft een aangename rasp in zijn stem... | [Link](https://www.podiuminfo.nl/concert/450619/Jack-Savoretti-We-Will-Always-Be-The-Way-We-Were-Tour/Paradiso/) | EUR 39.30 |
 | Fat Freddy's Drop | Concert | ma 12 okt. 2026, 20:00 | Paradiso - Grote Zaal | Fat Freddy’s Drop betovert hun publiek met euforische, diafragma-vernietigende m... | [Link](https://www.podiuminfo.nl/concert/445724/Fat-Freddys-Drop/Paradiso/) | EUR 50.40 |
@@ -264,9 +266,9 @@ Total events: 265
 | Cat Power | Concert | do 29 okt. 2026, 19:00 | Paradiso - Grote Zaal | Cat Power viert het twintigjarig jubileum van haar baanbrekende album 'The Great... | [Link](https://www.podiuminfo.nl/concert/446869/Cat-Power/Paradiso/) | EUR 45.40 |
 | Floor Jansen | Concert | zo 1 nov. 2026, 20:00 | Paradiso - Grote Zaal | Al meer dan vijfentwintig jaar is Floor Jansen een van de meest succesvolle zang... | [Link](https://www.podiuminfo.nl/concert/446080/Floor-Jansen/Paradiso/) | EUR 44.40 |
 | Ploegendienst | Concert | za 7 nov. 2026, 19:00 | Paradiso - Grote Zaal | Ploegendienst trapt graag, en ze trappen hard. Tegen de massa en het systeem, te... | [Link](https://www.podiuminfo.nl/concert/448328/Ploegendienst/Paradiso/) | EUR 28.20 |
-| Merol | Concert | za 14 nov. 2026, 20:00 | Paradiso - Grote Zaal | nieuw album + nieuwe show
-wie durft?
-
+| Merol | Concert | za 14 nov. 2026, 20:00 | Paradiso - Grote Zaal | nieuw album + nieuwe show
+wie durft?
+
 LEVE DE FEEKS TOUR | [Link](https://www.podiuminfo.nl/concert/451452/Merol/Paradiso/) | EUR 34.30 |
 | Lucky Fonz III @ Tolhuistuin | Concert | za 14 nov. 2026, 20:30 | Tolhuistuin - Tolhuistuin Club | 3voor12 (VPRO) riep Lucky Fonz III uit tot één van de meest invloedrijke artiest... | [Link](https://www.podiuminfo.nl/concert/447127/Lucky-Fonz-III/Tolhuistuin/) | EUR 23.70 |
 | Amistat | Concert | ma 16 nov. 2026, 19:30 | Paradiso - Grote Zaal | Na een succesvol jaar in 2025 komen de tweelingbroers Amistat in 2026 met een ni... | [Link](https://www.podiuminfo.nl/concert/451714/Amistat/Paradiso/) | EUR 31.30 |
