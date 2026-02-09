@@ -27,7 +27,8 @@
       "Bash(chcp:*)",
       "Bash(set:*)",
       "Bash(PYTHONIOENCODING=utf-8 python:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "WebFetch(domain:www.podiuminfo.nl)"
     ]
   }
 }
