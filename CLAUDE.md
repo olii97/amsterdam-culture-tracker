@@ -36,8 +36,12 @@ Sheets    - events (31 rows)
 - Streamlit UI (`app.py`) also reads/writes Supabase
 
 ### Phase 2: Seed Venues -- DONE
-- 4 venues seeded via `seed_venues.sql`: De Kleine Komedie, Rode Hoed, Koninklijk Theater Carre, Muziekgebouw aan 't IJ
+- 4 venues seeded via `seed_venues.sql`: De Kleine Komedie, Rode Hoed, Koninklijk Theater Carré, Muziekgebouw aan 't IJ
 - Each with address, GPS coordinates, and website
+
+### Phase 0 (Schema Evolution) -- DONE
+- `migrations/001_phase0_schema.sql`: adds `venue_type`, `museumkaart` to venues; creates `exhibitions`, `saved_events`
+- `seed_museums.sql`: 30 museumkaart-eligible Amsterdam museums with coordinates
 
 ## Remaining phases
 
@@ -84,11 +88,22 @@ The app suggests events based on preferences and visit history.
 | `app.py` | Streamlit UI for the pipeline |
 | `config.py` | Loads env vars from `.env` |
 | `schema.sql` | Full Supabase schema (events, venues, venue_visits, processed_emails + RLS) |
+| `migrations/001_phase0_schema.sql` | Phase 0: venue_type, museumkaart, exhibitions, saved_events |
 | `seed_venues.sql` | Initial Amsterdam venue data (4 venues with coordinates) |
+| `seed_museums.sql` | 30 museumkaart-eligible Amsterdam museums with coordinates |
 | `.env` | Credentials (not committed) |
 | `.env.example` | Template for `.env` |
 | `requirements.txt` | Python dependencies |
 | `run_extract.bat` | Windows batch file to run the extractor |
+
+## Supabase schema setup order
+
+For a fresh project or after cloning, run in Supabase SQL Editor in this order:
+
+1. `schema.sql` — base tables
+2. `migrations/001_phase0_schema.sql` — venue_type, museumkaart, exhibitions, saved_events
+3. `seed_venues.sql` — 4 theater/concert venues
+4. `seed_museums.sql` — 30 museumkaart museums
 
 ## Env vars
 
