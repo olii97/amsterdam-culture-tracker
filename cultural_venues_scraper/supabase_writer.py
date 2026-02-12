@@ -17,27 +17,59 @@ DUTCH_MONTHS = {
 
 def parse_event_date(date_str: str) -> str | None:
     """
-    Parse Dutch date string (e.g. 'di 10 feb 2026, 19:30 - 23:00') to YYYY-MM-DD.
+    Parse Dutch date string to YYYY-MM-DD.
+    Supports: "di 10 feb 2026", "10 feb. 2026", "ma 16 feb, 19.30" (year inferred), "Vandaag".
     Returns None if parsing fails.
     """
     if not date_str or not isinstance(date_str, str):
         return None
-    # Match: optional weekday + DD + month (3 chars) + YYYY
-    # e.g. "di 10 feb 2026" or "10 feb 2026" or "10 februari 2026"
-    m = re.search(r"(\d{1,2})\s+([a-z]{3,9})\s+(\d{4})", date_str.lower())
-    if not m:
-        return None
-    day = int(m.group(1))
-    mon_str = m.group(2)[:3]  # first 3 chars for abbreviation
-    year = int(m.group(3))
-    month = DUTCH_MONTHS.get(mon_str)
-    if not month:
-        return None
-    try:
-        dt = datetime(year, month, day)
-        return dt.strftime("%Y-%m-%d")
-    except (ValueError, TypeError):
-        return None
+    s = date_str.strip().lower()
+
+    # "Vandaag" / "today" -> today
+    if s.startswith("vandaag") or s == "today":
+        return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Match: DD + month (abbrev or full) + optional dot + optional YYYY
+    # e.g. "do 12 feb 2026", "12 feb. 2026", "ma 16 feb, 19.30", "wo 18 feb, 19.30 uur"
+    m = re.search(r"(\d{1,2})\s+([a-z]{3,9})\.?\s*(?:,|\s+)(\d{4})?", s)
+    if m:
+        day = int(m.group(1))
+        mon_str = m.group(2)[:3]
+        year_str = m.group(3)
+        year = int(year_str) if year_str else None
+        month = DUTCH_MONTHS.get(mon_str)
+        if not month:
+            return None
+        if year is None:
+            now = datetime.now(timezone.utc)
+            year = now.year
+            try:
+                dt = datetime(year, month, day)
+                if dt.date() < now.date():
+                    year += 1
+            except (ValueError, TypeError):
+                pass
+        try:
+            dt = datetime(year, month, day)
+            return dt.strftime("%Y-%m-%d")
+        except (ValueError, TypeError):
+            pass
+
+    # Fallback: DD month YYYY with space (no comma), e.g. "vr 13 februari 2026"
+    m2 = re.search(r"(\d{1,2})\s+([a-z]{3,9})\s+(\d{4})", s)
+    if m2:
+        day = int(m2.group(1))
+        mon_str = m2.group(2)[:3]
+        year = int(m2.group(3))
+        month = DUTCH_MONTHS.get(mon_str)
+        if month:
+            try:
+                dt = datetime(year, month, day)
+                return dt.strftime("%Y-%m-%d")
+            except (ValueError, TypeError):
+                pass
+
+    return None
 
 
 def get_supabase_client():
