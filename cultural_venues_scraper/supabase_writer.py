@@ -174,14 +174,26 @@ def write_to_supabase(events: list[dict]) -> None:
         )
         return
 
+    # Deduplicate by (event_title, event_date) so upsert does not see duplicate keys
+    seen_keys = set()
+    unique_rows = []
+    for row in rows:
+        key = _event_key(row)
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        unique_rows.append(row)
+    if len(unique_rows) < len(rows):
+        print(f"Deduped {len(rows) - len(unique_rows)} duplicate (title, date) row(s) before upsert")
+
     try:
-        existing_keys = _fetch_existing_scraper_keys(sb, rows)
-        new_events_estimated = sum(1 for row in rows if _event_key(row) not in existing_keys)
+        existing_keys = _fetch_existing_scraper_keys(sb, unique_rows)
+        new_events_estimated = sum(1 for row in unique_rows if _event_key(row) not in existing_keys)
 
         sb.table("events").upsert(
-            rows, on_conflict="event_title,event_date"
+            unique_rows, on_conflict="event_title,event_date"
         ).execute()
-        print(f"Upserted {len(rows)} row(s) to Supabase")
+        print(f"Upserted {len(unique_rows)} row(s) to Supabase")
         print(f"Estimated new events inserted: {new_events_estimated}")
         if skipped:
             print(f"  Skipped {skipped} event(s) with unparseable dates")
@@ -191,7 +203,7 @@ def write_to_supabase(events: list[dict]) -> None:
             run_id,
             "completed",
             total_scraped=total_scraped,
-            parsed_rows=len(rows),
+            parsed_rows=len(unique_rows),
             skipped_unparseable_dates=skipped,
             new_events_estimated=new_events_estimated,
         )
@@ -202,7 +214,7 @@ def write_to_supabase(events: list[dict]) -> None:
             run_id,
             "failed",
             total_scraped=total_scraped,
-            parsed_rows=len(rows),
+            parsed_rows=len(unique_rows),
             skipped_unparseable_dates=skipped,
             error_message=str(e),
         )
