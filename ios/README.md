@@ -124,3 +124,123 @@ Per the project roadmap (Phase 4), future enhancements include:
 - Search functionality
 - Event calendar view
 - Share events with friends
+
+---
+
+## SwiftUI Implementation Plan (Adjusted to Current iOS Project)
+
+This plan assumes your Supabase schema changes are already added and focuses on shipping in vertical slices.
+
+### Phase 0 - Align Models and Database Contracts (1-2 sessions)
+
+Goal: make Swift models and Supabase schema match exactly before adding more UI.
+
+- Confirm all id fields use UUID format in both app models and Supabase tables.
+- Update iOS models to match schema additions:
+  - `venues.venue_type`
+  - `venues.museumkaart`
+  - `exhibitions` table model
+  - `saved_events` table model
+- Add small query helpers to `SupabaseService`:
+  - fetch museums only
+  - fetch exhibitions ending in N days
+  - save/unsave event
+- Add `UNIQUE` and index checks in SQL docs/migrations (if not already done):
+  - `saved_events` unique by saved item
+  - index on `exhibitions.end_date`
+
+### Phase 1 - Map and Visit Loop (Core Habit Engine) (2-4 sessions)
+
+Goal: map becomes the daily motivation surface.
+
+- Extend `VenueMapView`:
+  - pin style for visited vs unvisited
+  - optional filter for museums only
+  - quick action to log a visit from map flow
+- Extend `VenueDetailView`:
+  - "Log visit" CTA
+  - mini timeline of recent visits
+  - upcoming exhibitions for that venue
+- Improve `VisitLogView`:
+  - group by month
+  - lightweight stats header (total visits, unique venues)
+
+Done criteria:
+- You can open app, view map, log visit, and immediately see progress reflected.
+
+### Phase 2 - Discovery Layer (Events + Museums) (2-4 sessions)
+
+Goal: reduce decision fatigue and surface the right options.
+
+- Events tab:
+  - add bookmark/save action (to `saved_events`)
+  - add "Tonight" / "This week" quick filters
+  - improve empty states
+- Add museum checklist view:
+  - all museumkaart museums
+  - visited/unvisited status
+  - quick jump to map/detail
+- Add "Surprise Me" action:
+  - random unvisited museum or relevant event
+
+Done criteria:
+- In under 10 seconds, you can decide where to go next.
+
+### Phase 3 - Nudge Layer (Weekly Briefing + Urgency) (2-3 sessions)
+
+Goal: create weekly momentum without manual planning.
+
+- Add "Ending soon" exhibition section in app home/feed.
+- Build local weekly digest generation:
+  - 3 matching events
+  - 1 ending soon exhibition
+  - 1 unvisited nearby museum
+- Add app-side notification scheduling (local notification MVP first).
+
+Done criteria:
+- Weekly reminder appears and drives at least one quick action in app.
+
+### Phase 4 - Progress and Motivation (1-3 sessions)
+
+Goal: make progress visible and rewarding.
+
+- Add personal stats screen:
+  - neighborhood coverage
+  - venue diversity
+  - visit streak
+- Add Museumkaart ROI counter:
+  - simple annual estimate based on visited museums
+- Add shareable personal recap card (optional).
+
+Done criteria:
+- You can clearly see your cultural progress over time.
+
+---
+
+## Suggested Backlog in Xcode
+
+Create these work items in order:
+
+1. `Model parity pass` - UUID + new schema fields in Swift models
+2. `SupabaseService parity pass` - new query and mutation methods
+3. `Map visited state` - visited/unvisited pin rendering
+4. `Log visit from venue detail` - one-tap habit loop
+5. `Exhibitions model + list` - ending soon query and display
+6. `Saved events` - bookmark and list
+7. `Museum checklist` - visited progress list
+8. `Weekly digest MVP` - local notification + digest screen
+9. `Stats + ROI` - progress reinforcement
+
+---
+
+## Practical Build Rules
+
+- Keep every phase as a vertical slice that can run end-to-end.
+- Prefer small `SupabaseService` methods with explicit return models.
+- Keep table/column naming identical between Swift and Supabase.
+- Validate UUID decoding early in each new model to avoid runtime surprises.
+- Add one simulator smoke test after each major slice:
+  - launch app
+  - fetch data
+  - perform one write
+  - verify UI refreshes

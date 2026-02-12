@@ -38,6 +38,33 @@ python -m cultural_venues_scraper.concertgebouw.scraper
 python -m cultural_venues_scraper.pakhuis_de_zwijger.scraper
 ```
 
+## Daily GitHub Actions Run
+
+This repo includes `.github/workflows/daily-scrape.yml` to run the scraper every day.
+
+### One-time setup
+
+1. Push this repository to GitHub.
+2. In GitHub: `Settings` -> `Secrets and variables` -> `Actions`.
+3. Add these repository secrets:
+   - `SUPABASE_URL`
+   - `SUPABASE_KEY`
+4. In GitHub: `Actions` tab -> enable workflows if prompted.
+5. Open `Daily Cultural Scrape` workflow and click `Run workflow` once to verify.
+
+### Schedule
+
+- The workflow runs daily at `04:00 UTC`.
+- This is roughly early morning Amsterdam time; adjust cron in the workflow if you want a different local hour.
+
+### What it does
+
+- Checks out the repo
+- Installs Python dependencies from `requirements.txt`
+- Runs `python -m cultural_venues_scraper.scrape_all`
+- Writes/upserts events to Supabase
+- Logs run stats to `scraper_runs` table
+
 ## Adding a New Venue
 
 1. Create folder: `cultural_venues_scraper/<venue_name>/`
