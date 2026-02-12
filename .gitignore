@@ -8,7 +8,3 @@ venv/
 nul
 
 # Xcode / iOS
-ios/**/xcuserdata/
-ios/**/.build/
-ios/**/DerivedData/
-*.xcworkspace/xcuserdata/
